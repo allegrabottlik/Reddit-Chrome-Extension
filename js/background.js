@@ -1,5 +1,5 @@
 chrome.contextMenus.create ({
-    "title": "View Top Posts From This Subreddit",
+    "title": "select wish list to move items from saved for later to",
     "contexts": ["selection"],
     "onclick": openTab()
 });
@@ -7,18 +7,7 @@ chrome.contextMenus.create ({
 function openTab(){
     return function(info, tab){
       let text = info.selectionText;
-      let redditLink = "https://www.reddit.com/" + format(text) + "/top/?t=all"
-      chrome.tabs.create ({index: tab.index + 1, url: redditLink, selected: true});
+      let wishlistLink = "https://www.amazon.com/hz/wishlist/ls/ref=cm_wl_your_lists"
+      chrome.tabs.create ({index: tab.index + 1, url: wishlistLink, selected: true});
     }
 };
-
-function format(subName){
-    // If selected text begins with "r/"
-    if (subName[0] === "r" && subName[1] === "/"){
-        return subName
-    } 
-    else {
-        return "r/" + subName
-    }
-};
-
