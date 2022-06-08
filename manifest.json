@@ -1,8 +1,8 @@
 {
     "manifest_version": 2,
-    "name": "Top Posts Viewer",
+    "name": "Move Amazon Saved For Later Cart Items To Wishlist",
     "version": "1.0",
-    "description": "Launch a new tab with top posts from any subreddit.",
+    "description": "Move Amazon Saved For Later Cart Items To Wishlist.",
     "permissions": [
         "contextMenus",
         "tabs"
