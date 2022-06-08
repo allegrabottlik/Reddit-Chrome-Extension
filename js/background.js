@@ -13,6 +13,14 @@ function openTab(){
 };
 
 
+//somehow need to get the code 3O6MPC8BWUEPE in my default wishlist from the URL in the list of wishlists and then put that into the function moveToWishList() 
+//get wishlist URL and strip?
+//https://www.amazon.com/hz/wishlist/ls/ref=cm_wl_your_lists
+//https://www.amazon.com/hz/wishlist/ls/3O6MPC8BWUEPE
+//
+
+---
+
 function moveToWishList() {
 	var query = document.querySelectorAll("#sc-saved-cart input[value='Move to Wish List']")
 	if (query.length) {
